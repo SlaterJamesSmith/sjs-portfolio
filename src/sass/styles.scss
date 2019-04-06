@@ -52,6 +52,12 @@ h2 {
   }
 }
 
+.video:hover {
+  .box-vid {
+    border-right: 2px solid tomato;
+  }
+}
+
 .production {
   display: flex;
   flex-direction: row;
@@ -65,6 +71,7 @@ h2 {
   width: 5px;
   z-index: -1;
   float:left;
+  // margin-bottom: 3px;
   // float:left;
 }
 
@@ -75,18 +82,21 @@ h2 {
   width: 5px;
   z-index: -1;
   float:left;
-  // border-bottom: 0;
   // float:left;
 }
 
-.dev {
-  position: absolute;
-  align-self: flex-start;
-  margin-top: 3px;
-  margin-left: 10px;
-  transition: color 1.5s ease;
+.box-vid {
+  display: absolute;
+  background-color: firebrick;
+  height: 25px;
+  width: 5px;
+  z-index: -1;
+  float:left;
+  // float:left;
 }
 
+.dev,
+.vid,
 .prod {
   position: absolute;
   align-self: flex-start;
@@ -95,6 +105,13 @@ h2 {
   transition: color 1.5s ease;
 }
 
+.development,
+.graphic,
+.video {
+  margin-bottom: 5px;
+}
+
+.vid-active,
 .prod-active,
 .dev-active {
   position: absolute;
@@ -106,6 +123,8 @@ h2 {
   z-index: 1;
 }
 
+.transform-vid,
+.transform-prod,
 .transform {
   -webkit-transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
   -moz-transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
@@ -122,17 +141,15 @@ h2 {
   border-bottom: 2px solid white;
 }
 
-.transform-prod {
-  -webkit-transition: height 2s, width 2s, background-color 2s, border-left 2s;
-  -moz-transition: height 2s, width 2s, background-color 2s, border-left 2s;
-  -o-transition: height 2s, width 2s, background-color 2s, border-left 2s;
-  -ms-transition: height 2s, width 2s, background-color 2s, border-left 2s;
-  transition: height 2s, width 2s, background-color 2s, border-left 2s;
-  transition-timing-function: ease;
-}
-
 .transform-active-prod {
   background-color: violet;
+  height: 200px;
+  width: 98vw;
+  border-bottom: 2px solid white;
+}
+
+.transform-active-vid {
+  background-color: tomato;
   height: 200px;
   width: 98vw;
 }

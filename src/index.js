@@ -11,4 +11,9 @@ $( document ).ready(function() {
     $('.prod').toggleClass('prod-active');
     console.log("hello")
   });
+  $(".vid").click(function() {
+    $('.transform-vid').toggleClass('transform-active-vid');
+    $('.vid').toggleClass('vid-active');
+    console.log("hello")
+  });
 });
