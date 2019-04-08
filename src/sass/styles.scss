@@ -71,6 +71,9 @@ h2 {
   width: 5px;
   z-index: -1;
   float:left;
+  display: grid;
+  grid-template-columns: auto 250px;
+  grid-template-rows: auto;
   // margin-bottom: 3px;
   // float:left;
 }
@@ -136,7 +139,7 @@ h2 {
 
 .transform-active {
   background-color: #45CEE0;
-  height: 200px;
+  height: 600px;
   width: 98vw;
   border-bottom: 2px solid white;
 }
@@ -153,6 +156,42 @@ h2 {
   height: 200px;
   width: 98vw;
 }
+
+ul {
+  font-family: 'Raleway-bold';
+  color: white;
+  h4 {
+    margin-bottom: .2em;
+    margin-top: .8em;
+  }
+  li {
+    font-family: 'Raleway';
+    color: white;
+    display: block;
+    margin-left: 1em;
+  }
+}
+
+.box-item {
+  font-family: 'Raleway';
+  color: white;
+  padding-top: 0;
+  margin-top: 20px;
+}
+
+.development {
+  // display: grid;
+  // grid-template-columns: auto 50px;
+  // grid-template-rows: auto;
+
+}
+.proficiencies {
+  grid-column-start: 2;
+  h2 {
+    // text-align: right;
+  }
+}
+
 
 
 
