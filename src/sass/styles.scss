@@ -69,7 +69,7 @@ h2 {
   background-color: #218D9B;
   height: 25px;
   width: 5px;
-  z-index: -1;
+  z-index: -4;
   float:left;
   display: grid;
   grid-template-columns: auto 250px;
@@ -83,7 +83,7 @@ h2 {
   background-color: purple;
   height: 25px;
   width: 5px;
-  z-index: -1;
+  z-index: 3;
   float:left;
   // float:left;
 }
@@ -180,16 +180,26 @@ ul {
 }
 
 .development {
-  // display: grid;
-  // grid-template-columns: auto 50px;
-  // grid-template-rows: auto;
-
+  z-index: 0;
 }
+.graphic {
+  z-index: 1;
+}
+
 .proficiencies {
+  display: none;
+  z-index: 0;
   grid-column-start: 2;
   h2 {
-    // text-align: right;
+    margin-top: 5px;;
   }
+}
+
+.prof-box {
+  width: auto;
+  height: 15px;
+  background-color: aquamarine;
+  margin-top: -8px;
 }
 
 

@@ -4,6 +4,13 @@ $( document ).ready(function() {
   $(".dev").click(function() {
     $('.transform').toggleClass('transform-active');
     $('.dev').toggleClass('dev-active');
+    // $('.proficiencies').fadeToggle(3000);
+    if($('.proficiencies').is(':visible')){
+       $('.proficiencies').fadeOut(1000);
+    }
+    else{
+       $('.proficiencies').fadeIn(2000);
+    }
     console.log("hello")
   });
   $(".prod").click(function() {
