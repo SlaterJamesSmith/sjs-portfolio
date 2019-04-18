@@ -1,6 +1,8 @@
 @import "animate.scss";
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
+
 
 // * {
 //   border: 1px solid red;
@@ -90,7 +92,7 @@ h2 {
   z-index: -4;
   float:left;
   display: grid;
-  grid-template-columns: auto 250px 250px;
+  grid-template-columns: 200px auto 275px 250px;
   grid-template-rows: auto;
   // margin-bottom: 3px;
   // float:left;
@@ -138,6 +140,13 @@ h2 {
   position: absolute;
   color: white;
   align-self: flex-start;
+  font-weight: 800;
+}
+
+.vid-active:hover,
+.prod-active:hover,
+.dev-active:hover {
+  text-shadow: 0 0 1px white;
 }
 
 .menubtn {
@@ -207,14 +216,14 @@ ul {
 .proficiencies {
   display: none;
   z-index: 0;
-  grid-column: 3 / 3;
+  grid-column: 4 / 4;
   h2 {
     margin-top: 5px;;
   }
 }
 
 .proficiencies2 {
-  grid-column: 2 / 2;
+  grid-column: 3 / 3;
 }
 
 
@@ -226,10 +235,55 @@ ul {
 }
 
 .prof-box2 {
-  background-color: green;
+  background-color: lightgreen;
+}
+
+.prof-box3 {
+  background-color: white;
+}
+
+.thumbnail1 {
+  width: 200px;
+  border: 5px solid darkblue;
+}
+
+a {
+  color: white;
+  opacity: .5;
 }
 
 
+a:hover {
+  opacity: .8;
+  // text-shadow: 0 0 3px lightblue;
+}
+
+.prof-specific {
+  li {
+    opacity: .8;
+  }
+}
+
+.grey {
+  color: lightblue;
+}
+
+.dev-background {
+  grid-column: 2 / 2;
+  h1 {
+    margin-top: 0;
+    // font-family: arial;
+    font-weight: 800;
+    line-height: 1.1;
+    font-size: 60px;
+    margin-top: 20px;
+  }
+  h2 {
+    margin-left: 20px;
+    margin-right: 130px;
+    font-weight: 700;
+  }
+}
 
 
 // @media screen and (max-width: 1024px) {
