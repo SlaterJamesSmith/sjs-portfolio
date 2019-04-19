@@ -1,5 +1,5 @@
 @import "animate.scss";
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
 
@@ -12,7 +12,7 @@ $font-stack: 'Raleway', sans-serif;
 $primary-font-color: #535353;
 
 // * {
-//   border: 1px solid blue;
+//   border: 1px solid forestgreen;
 // }
 
 body {
@@ -78,6 +78,12 @@ h2 {
   }
 }
 
+.bio:hover {
+  .box-bio {
+    border-right: 3px solid yellow;
+  }
+}
+
 .production {
   display: flex;
   flex-direction: row;
@@ -118,6 +124,17 @@ h2 {
   // float:left;
 }
 
+.box-bio {
+  display: absolute;
+  background-color: khaki;
+  height: 34px;
+  width: 8px;
+  z-index: -1;
+  float:left;
+  // float:left;
+}
+
+.biog,
 .dev,
 .vid,
 .prod {
@@ -134,15 +151,17 @@ h2 {
   margin-bottom: 5px;
 }
 
+.bio-active,
 .vid-active,
 .prod-active,
 .dev-active {
-  position: absolute;
+  // position: absolute;
   color: white;
   align-self: flex-start;
   font-weight: 800;
 }
 
+.bio-active:hover,
 .vid-active:hover,
 .prod-active:hover,
 .dev-active:hover {
@@ -153,6 +172,7 @@ h2 {
   z-index: 1;
 }
 
+.transform-bio,
 .transform-vid,
 .transform-prod,
 .transform {
@@ -180,6 +200,13 @@ h2 {
 
 .transform-active-vid {
   background-color: tomato;
+  height: 200px;
+  width: 98vw;
+  border-bottom: 2px solid white;
+}
+
+.transform-active-bio {
+  background-color: gold;
   height: 200px;
   width: 98vw;
 }
@@ -290,6 +317,35 @@ a:hover {
     max-width: 630px;
     font-weight: 400;
   }
+}
+
+.dev-menu {
+  grid-column: 1 / 1;
+  ul {
+    margin-top: 20px;
+    margin-left: 0;
+    padding-left: 20px;;
+    li{
+      font-size: 16px;
+      font-family: 'Quicksand';
+      margin-left: 0;
+      padding-left: 0;
+      margin-bottom: 8px;;
+      padding: 0;
+      opacity: .5;
+    }
+    li:hover {
+      opacity: .8;
+    }
+  }
+}
+
+.purple {
+  color: violet;
+}
+
+.tomato {
+  color: tomato;
 }
 
 
