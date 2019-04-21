@@ -111,7 +111,23 @@ h2 {
   width: 8px;
   z-index: 3;
   float:left;
+  display: grid;
+  grid-template-columns: 200px auto 275px 250px;
+  grid-template-rows: auto;
   // float:left;
+}
+
+.graphics-content {
+  display: none;
+}
+
+.graphics-column-two {
+  grid-column: 1 / 1;
+}
+
+.graphics-column-two {
+  grid-column: 2 / 2;
+  min-width: 500px;
 }
 
 .box-vid {
@@ -193,7 +209,7 @@ h2 {
 
 .transform-active-prod {
   background-color: violet;
-  height: 200px;
+  height: 400px;
   width: 98vw;
   border-bottom: 2px solid white;
 }
@@ -306,14 +322,15 @@ a:hover {
     margin-top: 20px;
   }
   h2 {
-    margin-left: 85px;
+    margin-left: 30px;
     max-width: 520px;
+    min-width: 300px;
     font-weight: 700;
     margin-bottom: 5px;
   }
   h3 {
     margin-top: 0;
-    margin-left: 95px;
+    margin-left: 60px;
     max-width: 630px;
     font-weight: 400;
   }
@@ -346,6 +363,12 @@ a:hover {
 
 .tomato {
   color: tomato;
+}
+
+.logo {
+  h1 {
+    margin-top: 0;
+  }
 }
 
 

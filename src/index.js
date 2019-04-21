@@ -37,6 +37,13 @@ $( document ).ready(function() {
     }
     $('.body-trans').toggleClass('body-active');
 
+    if($('.graphics-content').is(':visible')){
+       $('.graphics-content').fadeOut(1000);
+    }
+    else{
+       $('.graphics-content').fadeIn(2000);
+    }
+
     console.log("hello")
   });
 
