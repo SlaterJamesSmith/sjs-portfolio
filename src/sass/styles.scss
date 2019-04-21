@@ -112,7 +112,7 @@ h2 {
   z-index: 3;
   float:left;
   display: grid;
-  grid-template-columns: 200px auto 275px 250px;
+  grid-template-columns: 200px auto auto;
   grid-template-rows: auto;
   // float:left;
 }
@@ -128,6 +128,50 @@ h2 {
 .graphics-column-two {
   grid-column: 2 / 2;
   min-width: 500px;
+}
+
+.graphics-column-three {
+  display: grid;
+  grid-column: 3 / 3;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 400px;
+
+}
+
+// .position1,
+.position2,
+.position3,
+.position4,
+.position5,
+.position6,
+.position7,
+.position8,
+.position9 {
+  width: 120px;
+  height: 120px;
+}
+
+.position1 {
+  grid-column: 1 / 4;
+  max-width: 380px;
+}
+
+.position2 {
+  grid-column: 2 / 2;
+}
+
+.position3 {
+  grid-column: 3 / 3;
+}
+
+.position10 {
+  grid-column: 1 / 4;
+  width: 380px;
 }
 
 .box-vid {
@@ -209,7 +253,7 @@ h2 {
 
 .transform-active-prod {
   background-color: violet;
-  height: 400px;
+  height: 550px;
   width: 98vw;
   border-bottom: 2px solid white;
 }
@@ -285,6 +329,10 @@ ul {
   background-color: white;
 }
 
+.prof-box4 {
+  background-color: purple;
+  grid-column: 1 / 4;
+}
 .thumbnail1 {
   width: 200px;
   border: 5px solid darkblue;
