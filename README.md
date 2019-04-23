@@ -8,5 +8,5 @@
 
 In-progress custom portfolio page.
 
-*{This software is licensed under the MIT license}*
-Copyright (c) 2019 **_{Slater Smith}_**
+*This software is licensed under the MIT license*
+Copyright (c) 2019 **_Slater Smith_**
