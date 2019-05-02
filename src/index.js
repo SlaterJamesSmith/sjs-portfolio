@@ -43,7 +43,7 @@ $( document ).ready(function() {
     }
     else{
       $('.graphics-content').fadeIn(2000);
-      setTimeout(function () { $('.graphics-content-img').fadeIn(1500); }, 700);
+      setTimeout(function () { $('.graphics-content-img').fadeIn(1500); }, 800);
     }
 
     console.log("hello")

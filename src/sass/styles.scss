@@ -20,6 +20,8 @@ body {
   color: $primary-font-color;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 10px;
+  // padding-left: 10px;
   // background-color: grey;
   // margin: 0 auto;
   // max-width: 1024px;
@@ -38,7 +40,7 @@ body {
 }
 
 .body-active {
-  width: 98vw;
+  width: 100vw;
 }
 
 h1 {
