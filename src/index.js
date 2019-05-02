@@ -1,7 +1,12 @@
 import './sass/styles.scss';
 
 $( document ).ready(function() {
+
+  let clickDevDisabled = false;
   $(".dev").click(function() {
+    if (clickDevDisabled) {
+        return;
+      }
     $('.transform').toggleClass('transform-active');
     $('.dev').toggleClass('dev-active');
 
@@ -17,14 +22,18 @@ $( document ).ready(function() {
     else{
        $('.proficiencies').fadeIn(2000);
     }
-    console.log("hello")
+    clickDevDisabled = true;
+      setTimeout(function(){clickDevDisabled = false;}, 1500);
   });
 
 
 
 
-
+  let clickProdDisabled = false;
   $(".prod").click(function() {
+    if (clickProdDisabled) {
+        return;
+      }
 
 
 
@@ -42,11 +51,11 @@ $( document ).ready(function() {
        $('.graphics-content-img').fadeOut(150);
     }
     else{
-      $('.graphics-content').fadeIn(2000);
-      setTimeout(function () { $('.graphics-content-img').fadeIn(1500); }, 800);
+      $('.graphics-content').fadeIn(1500);
+      setTimeout(function () { $('.graphics-content-img').fadeIn(700); }, 800);
     }
-
-    console.log("hello")
+    clickProdDisabled = true;
+      setTimeout(function(){clickProdDisabled = false;}, 1500);
   });
 
 
