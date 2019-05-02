@@ -39,9 +39,11 @@ $( document ).ready(function() {
 
     if($('.graphics-content').is(':visible')){
        $('.graphics-content').fadeOut(1000);
+       $('.graphics-content-img').fadeOut(150);
     }
     else{
-       $('.graphics-content').fadeIn(2000);
+      $('.graphics-content').fadeIn(2000);
+      setTimeout(function () { $('.graphics-content-img').fadeIn(1500); }, 700);
     }
 
     console.log("hello")

@@ -121,6 +121,10 @@ h2 {
   display: none;
 }
 
+.graphics-content-img {
+  display: none;
+}
+
 .graphics-column-two {
   grid-column: 1 / 1;
 }
@@ -139,8 +143,8 @@ h2 {
   grid-row-gap: 10px;
   padding-left: 25px;
   padding-right: 25px;
-  height: 400px;
-
+  max-height: 400px;
+  min-width: 350px
 }
 
 // .position1,
@@ -236,11 +240,11 @@ h2 {
 .transform-vid,
 .transform-prod,
 .transform {
-  -webkit-transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
-  -moz-transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
-  -o-transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
-  -ms-transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
-  transition: height 2s, width 2s, background-color 2s, border-bottom 2s;
+  -webkit-transition: height 1.5s, width 1.5s, background-color 1.5s, border-bottom 1.5s;
+  -moz-transition: height 1.5s, width 1.5s, background-color 1.5s, border-bottom 1.5s;
+  -o-transition: height 1.5s, width 1.5s, background-color 1.5s, border-bottom 1.5s;
+  -ms-transition: height 1.5s, width 1.5s, background-color 1.5s, border-bottom 1.5s;
+  transition: height 1.5s, width 1.5s, background-color 1.5s, border-bottom 1.5s;
   transition-timing-function: ease;
 }
 
