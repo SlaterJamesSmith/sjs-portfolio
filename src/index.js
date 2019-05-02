@@ -18,10 +18,17 @@ $( document ).ready(function() {
 
     if($('.proficiencies').is(':visible')){
        $('.proficiencies').fadeOut(1000);
+       $('.proficiencies-lag1').fadeOut(400);
+       $('.proficiencies-lag2').fadeOut(150);
     }
     else{
        $('.proficiencies').fadeIn(2000);
+       setTimeout(function () { $('.proficiencies-lag1').fadeIn(700); }, 800);
+       setTimeout(function () { $('.proficiencies-lag2').fadeIn(700); }, 900);
     }
+
+
+
     clickDevDisabled = true;
       setTimeout(function(){clickDevDisabled = false;}, 1500);
   });
@@ -52,7 +59,7 @@ $( document ).ready(function() {
     }
     else{
       $('.graphics-content').fadeIn(1500);
-      setTimeout(function () { $('.graphics-content-img').fadeIn(700); }, 800);
+      setTimeout(function () { $('.graphics-content-img').fadeIn(550); }, 950);
     }
     clickProdDisabled = true;
       setTimeout(function(){clickProdDisabled = false;}, 1500);

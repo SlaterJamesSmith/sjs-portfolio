@@ -40,7 +40,7 @@ body {
 }
 
 .body-active {
-  width: 100vw;
+  width: 99vw;
 }
 
 h1 {
@@ -306,6 +306,8 @@ ul {
   z-index: 1;
 }
 
+.proficiencies-lag1,
+.proficiencies-lag2,
 .proficiencies {
   display: none;
   z-index: 0;
@@ -314,6 +316,7 @@ ul {
     margin-top: 5px;;
   }
 }
+
 
 .proficiencies2 {
   grid-column: 3 / 3;
