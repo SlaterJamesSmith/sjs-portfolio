@@ -429,6 +429,32 @@ a:hover {
 }
 
 
+.graphics-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  div {
+    // margin: 5px;
+    border: 3px solid white;
+    p {
+      font-weight: bold;
+      font-size: 24px;
+      margin: 8px;
+    }
+  }
+}
+
+.design-bio-left {
+  margin-right: 10px;
+}
+
+.design-bio-right:hover,
+.design-bio-left:hover {
+  border: 3px solid rgba(154, 18, 179, 1);
+  color: rgba(154, 18, 179, 1);
+}
+
+
 // @media screen and (max-width: 1024px) {
 //
 // }
