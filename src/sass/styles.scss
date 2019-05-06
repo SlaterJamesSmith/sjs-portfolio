@@ -93,13 +93,12 @@ h2 {
 }
 
 .box {
-  display: absolute;
+  display: grid;
   background-color: #218D9B;
   height: 34px;
   width: 8px;
   z-index: -4;
   float:left;
-  display: grid;
   grid-template-columns: 200px auto 275px 250px;
   grid-template-rows: auto;
   // margin-bottom: 3px;
@@ -107,16 +106,33 @@ h2 {
 }
 
 .box-prod {
-  display: absolute;
+  display: grid;
   background-color: purple;
   height: 34px;
   width: 8px;
-  z-index: 3;
-  float:left;
-  display: grid;
+  z-index: -3;
   grid-template-columns: 200px auto auto;
   grid-template-rows: auto;
   // float:left;
+}
+
+.box-vid {
+  display: grid;
+  background-color: firebrick;
+  height: 34px;
+  width: 8px;
+  z-index: -2;
+  float:left;
+  // float:left;
+}
+
+.box-bio {
+  display: absolute;
+  background-color: khaki;
+  height: 34px;
+  width: 8px;
+  z-index: -1;
+  float:left;
 }
 
 .graphics-content {
@@ -162,6 +178,10 @@ h2 {
   height: 120px;
 }
 
+.position9 {
+  margin-bottom: 8px;
+}
+
 .position1 {
   grid-column: 1 / 4;
   max-width: 380px;
@@ -180,25 +200,6 @@ h2 {
   width: 380px;
 }
 
-.box-vid {
-  display: absolute;
-  background-color: firebrick;
-  height: 34px;
-  width: 8px;
-  z-index: -1;
-  float:left;
-  // float:left;
-}
-
-.box-bio {
-  display: absolute;
-  background-color: khaki;
-  height: 34px;
-  width: 8px;
-  z-index: -1;
-  float:left;
-  // float:left;
-}
 
 .biog,
 .dev,
@@ -215,6 +216,10 @@ h2 {
 .graphic,
 .video {
   margin-bottom: 5px;
+}
+
+.video {
+  z-index: 1;
 }
 
 .bio-active,
@@ -259,14 +264,14 @@ h2 {
 
 .transform-active-prod {
   background-color: violet;
-  height: 550px;
+  height: 565px;
   width: 98vw;
   border-bottom: 2px solid white;
 }
 
 .transform-active-vid {
   background-color: tomato;
-  height: 200px;
+  height: 600px;
   width: 98vw;
   border-bottom: 2px solid white;
 }
