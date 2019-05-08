@@ -470,11 +470,26 @@ a:hover {
   color: rgba(154, 18, 179, 1);
 }
 
+.sub-headers {
+  font-weight: bold;
+  // font-size: 25px;
+  // padding-top: 10px;
+}
+
+.sub-headers-projects {
+  color: lightgreen;
+}
+
+.sub-headers-proficiencies {
+  color: aquamarine;
+}
+
 
 // @media screen and (max-width: 1024px) {
 //
 // }
 //
+
 @media screen and (max-width:1346px) {
   .dev-background {
     h1 {
@@ -665,5 +680,22 @@ a:hover {
   }
   li {
     font-size: 15px;
+  }
+  .sub-headers {
+    font-weight: bold;
+    // font-size: 25px;
+    padding-top: 10px;
+  }
+
+  .sub-headers-projects {
+    color: aquamarine;
+  }
+
+  .sub-headers-proficiencies {
+    color: lightgreen;
+  }
+
+  .transform-active {
+    height: 650px;
   }
 }
