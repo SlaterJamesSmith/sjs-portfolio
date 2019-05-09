@@ -29,6 +29,10 @@ body {
   // border-right: solid 7px #535353;
 }
 
+.toggle-phone-view {
+  display: none;
+}
+
 .body-trans {
   width: 555px;
   -webkit-transition: width 1.5s;
@@ -1051,6 +1055,9 @@ a:hover {
     background-color: gold;
   }
 
+  .toggle-phone-view {
+    display: block;
+  }
 
 
 }

@@ -16,21 +16,30 @@ $( document ).ready(function() {
     }
     $('.body-trans').toggleClass('body-active');
 
-    if($('.proficiencies').is(':visible')){
-       $('.proficiencies').fadeOut(1000);
-       $('.proficiencies-lag1').fadeOut(400);
-       $('.proficiencies-lag2').fadeOut(150);
-    }
-    else{
-       $('.proficiencies').fadeIn(2000);
-       setTimeout(function () { $('.proficiencies-lag1').fadeIn(700); }, 800);
-       setTimeout(function () { $('.proficiencies-lag2').fadeIn(700); }, 900);
+
+    if($('.toggle-phone-view').is(':visible')){
+       $('.proficiencies').toggle();
+       $('.proficiencies-lag1').toggle();
+       $('.proficiencies-lag2').toggle();
     }
 
+    if ($('.toggle-phone-view').is(':hidden')) {
+      if($('.proficiencies').is(':visible')){
+         $('.proficiencies').fadeOut(1000);
+         $('.proficiencies-lag1').fadeOut(400);
+         $('.proficiencies-lag2').fadeOut(150);
+      }
+      else{
+         $('.proficiencies').fadeIn(2000);
+         setTimeout(function () { $('.proficiencies-lag1').fadeIn(700); }, 800);
+         setTimeout(function () { $('.proficiencies-lag2').fadeIn(700); }, 900);
+      }
+    }
 
-
+  if ($('.toggle-phone-view').is(':hidden')) {
     clickDevDisabled = true;
       setTimeout(function(){clickDevDisabled = false;}, 1500);
+    }
   });
 
 
