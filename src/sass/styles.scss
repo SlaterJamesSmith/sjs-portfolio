@@ -837,6 +837,7 @@ a:hover {
 @media screen and (max-width: 590px) {
   body {
     padding: 0;
+    // color: white;
   }
   .logo {
     h1 {
@@ -986,6 +987,32 @@ a:hover {
     height: 900px;
   }
 
+  .biog,
+  .dev,
+  .vid,
+  .prod {
+    position: absolute;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 18px;
+    transition: color 0s ease;
+  }
+
+  .transform-bio,
+  .transform-vid,
+  .transform-prod,
+  .transform {
+    -webkit-transition: height 0s, width 0s, background-color 0s, border-bottom 0s;
+    -moz-transition: height 0s, width 0s, background-color 0s, border-bottom 0s;
+    -o-transition: height 0s, width 0s, background-color 0s, border-bottom 0s;
+    -ms-transition: height 0s, width 0s, background-color 0s, border-bottom 0s;
+    transition: height 0s, width 0s, background-color 0s, border-bottom 0s;
+    transition-timing-function: ease;
+  }
+
+  .menubtn {
+    color: white;
+  }
 
   .dev {
     left: 50%;
@@ -999,12 +1026,12 @@ a:hover {
   }
 
   .biog {
-    left: 47%;
+    left: 50%;
     margin-left: -41.69px;
   }
 
   .vid {
-    left: 47%;
+    left: 50%;
     margin-left: -46.73px;
   }
 
