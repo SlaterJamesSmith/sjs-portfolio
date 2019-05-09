@@ -840,8 +840,15 @@ a:hover {
 }
 
 @media screen and (max-width: 590px) {
-  body {
+  html {
+    max-width: 100vw;
+    margin: 0;
     padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
     // color: white;
   }
   .logo {
@@ -852,7 +859,7 @@ a:hover {
   .box {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2.5fr;
-    grid-template-rows: 450px 250px auto;
+    grid-template-rows: 420px 250px auto;
     .proficiencies2 {
       // display: flex;
       // flex-direction: row;
@@ -915,6 +922,7 @@ a:hover {
       h3 {
         margin-left: 0;
         margin-right: 0;
+        max-width: 100vw;
         // width: 95vw;
         min-width: 0;
         font-size: 13px;
@@ -989,7 +997,7 @@ a:hover {
 
   .transform-active {
     width: 99vw;
-    height: 900px;
+    height: 1200px;
   }
 
   .biog,
@@ -1066,16 +1074,17 @@ a:hover {
     width: 100vw;
   }
 
-  .proficiencies-lag1,
-  .proficiencies-lag2,
-  .proficiencies {
-    display: none;
-    z-index: 0;
-    grid-column: 1 / 5;
-    h2 {
-      margin-top: 5px;;
-    }
+  .body-trans {
+    margin: 0;
+    max-width: 100vw;
+    -webkit-transition: width 1.5s;
+    -moz-transition: width 1.5s;
+    -o-transition: width 1.5s;
+    -ms-transition: width 1.5s;
+    transition: width 1.5s;
+    transition-timing-function: ease;
   }
+
 
 
 }
