@@ -168,7 +168,7 @@ h2 {
   padding-left: 25px;
   padding-right: 25px;
   max-height: 400px;
-  min-width: 350px
+  min-width: 0;
 }
 
 // .position1,
@@ -304,6 +304,7 @@ ul {
 }
 
 .box-item {
+
   font-family: 'Raleway';
   color: white;
   padding-top: 0;
@@ -787,7 +788,7 @@ a:hover {
 
     .prof-box-devlast,
     .prof-box2 {
-      width: auto;
+      width: 70vw;
       margin-right: 50px;
     }
 
@@ -986,14 +987,6 @@ a:hover {
     padding-top: 10px;
   }
 
-  // .sub-headers-projects {
-  //   color: aquamarine;
-  // }
-  //
-  // .sub-headers-proficiencies {
-  //   margin-bottom: 0;
-  //   color: lightgreen;
-  // }
 
   .transform-active {
     width: 99vw;
