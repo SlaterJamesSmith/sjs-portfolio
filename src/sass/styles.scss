@@ -68,6 +68,7 @@ h2 {
     border-right: 3px solid skyblue;
   }
 }
+
 .graphic:hover {
   .box-prod {
     border-right: 3px solid violet;
@@ -206,7 +207,7 @@ h2 {
 .vid,
 .prod {
   position: absolute;
-  align-self: flex-start;
+  align-self: center;
   margin-top: 5px;
   margin-left: 18px;
   transition: color 1.5s ease;
@@ -981,8 +982,46 @@ a:hover {
   // }
 
   .transform-active {
-    width: 94vw;
+    width: 99vw;
     height: 900px;
+  }
+
+
+  .dev {
+    left: 50%;
+    margin-left: -78.39px;
+  }
+
+
+  .prod {
+    left: 50%;
+    margin-left: -73.36px;
+  }
+
+  .biog {
+    left: 47%;
+    margin-left: -41.69px;
+  }
+
+  .vid {
+    left: 47%;
+    margin-left: -46.73px;
+  }
+
+  .development {
+    background-color: lightblue;
+  }
+
+  .graphic {
+    background-color: violet;
+  }
+
+  .video {
+    background-color: tomato;
+  }
+
+  .bio {
+    background-color: gold;
   }
 
 
