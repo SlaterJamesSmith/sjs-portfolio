@@ -1334,7 +1334,96 @@ a:hover {
   }
 
   .transform-active-prod {
-    height: 1300px;
+    height: 300vw;
     border-bottom: 2px solid violet;
   }
+}
+
+@media screen and (max-width: 430px) {
+  .transform-active-prod {
+    height: 310vw;
+  }
+
+  .box-prod {
+    display: grid;
+    grid-template-rows: 350px auto;
+  }
+
+}
+
+// Iphone 6/7/8
+@media screen and (max-width: 375px) {
+  .transform-active-prod {
+    height: 325vw;
+  }
+
+  .box-prod {
+    display: grid;
+    grid-template-rows: 375px auto;
+  }
+
+}
+
+// Galaxy S5
+@media screen and (max-width: 361px) {
+  .transform-active-prod {
+    height: 330vw;
+  }
+  .box-prod {
+    display: grid;
+    grid-template-rows: 380px auto;
+
+    .position5,
+    .position7,
+    .position9,
+    .position8,
+    .position4,
+    .position6 {
+      // max-width: 120px;
+      // max-height: 120px;
+      width: 44vw;
+      height: 44vw;
+    }
+  }
+
+}
+
+
+//iphone 5
+@media screen and (max-width: 350px) {
+  .transform-active-prod {
+    height: 365vw;
+  }
+  .box-prod {
+    display: grid;
+    grid-template-rows: 425px auto;
+
+    // .position1 {
+    //
+    //   width: 92vw;
+    //
+    // }
+    // .position10 {
+    //   grid-row: 3 / 4;
+    //   padding-top: 0;
+    //   padding-bottom: 0;
+    //   border-top: 0;
+    //   border-bottom: 0;
+    //   width: 92vw;
+    //   // max-width: 380px;
+    // }
+
+    .position5,
+    .position7,
+    .position9,
+    .position8,
+    .position4,
+    .position6 {
+      // max-width: 120px;
+      // max-height: 120px;
+      width: 44vw;
+      height: 44vw;
+    }
+  }
+
 }
