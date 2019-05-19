@@ -283,7 +283,7 @@ h2 {
 
 .transform-active-vid {
   background-color: tomato;
-  height: 600px;
+  height: 1000px;
   width: 98vw;
   border-bottom: 2px solid white;
 }
@@ -325,8 +325,9 @@ ul {
 
 .vid-grid {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 200px 4fr;
 }
+
 
 .vid-grid-two {
   display: grid;
@@ -552,6 +553,29 @@ a:hover {
     }
   }
 }
+
+iframe {
+  margin-bottom: 25px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.far-right-vids {
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.vids-small {
+  width:30vw;
+  height: 16.8vw
+}
+
+.vids-large {
+  width:45vw;
+  height: 25.2vw
+}
+
+// width="380" height="213.75" .56 ratio
 
 //
 @media screen and (max-width: 1295px) {
