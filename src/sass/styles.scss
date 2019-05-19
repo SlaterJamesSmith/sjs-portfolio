@@ -328,6 +328,11 @@ ul {
   grid-template-columns: 1fr 4fr;
 }
 
+.vid-grid-two {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
 .vid-content {
   display: none;
   z-index: 0;
