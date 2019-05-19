@@ -516,6 +516,35 @@ a:hover {
   color: aquamarine;
 }
 
+iframe {
+  margin-bottom: 25px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.far-right-vids {
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.vids-small {
+  width:30vw;
+  height: 16.8vw
+}
+
+.vids-large {
+  width:45vw;
+  height: 25.2vw
+}
+
+.prof-box-vids {
+  background-color: darkred;
+  margin-bottom: 20px;
+  height: 16px;
+}
+
+// width="380" height="213.75" .56 ratio
+
 
 // @media screen and (max-width: 1024px) {
 //
@@ -554,28 +583,7 @@ a:hover {
   }
 }
 
-iframe {
-  margin-bottom: 25px;
-  border: 3px solid white;
-  border-radius: 5px;
-}
 
-.far-right-vids {
-  padding-left: 40px;
-  padding-right: 10px;
-}
-
-.vids-small {
-  width:30vw;
-  height: 16.8vw
-}
-
-.vids-large {
-  width:45vw;
-  height: 25.2vw
-}
-
-// width="380" height="213.75" .56 ratio
 
 //
 @media screen and (max-width: 1295px) {
