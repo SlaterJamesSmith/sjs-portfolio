@@ -283,7 +283,7 @@ h2 {
 
 .transform-active-vid {
   background-color: tomato;
-  height: 1000px;
+  height: 118vw;
   width: 98vw;
   border-bottom: 2px solid white;
 }
@@ -613,6 +613,16 @@ iframe {
   }
 }
 @media screen and (max-width: 1042px) {
+  .vid-grid-two {
+    display: grid;
+    grid-column: 1 / 2;
+    margin-left: 50px;
+  }
+
+  .prof-box-vidslarge {
+    margin-left: 100px;
+  }
+
   .dev-menu {
     display: none;
     ul {
