@@ -242,6 +242,8 @@ h2 {
   font-weight: 800;
 }
 
+
+
 .bio-active:hover,
 .vid-active:hover,
 .prod-active:hover,
@@ -308,7 +310,6 @@ ul {
 }
 
 .box-item {
-
   font-family: 'Raleway';
   color: white;
   padding-top: 0;
@@ -321,6 +322,20 @@ ul {
 .graphic {
   z-index: 1;
 }
+
+.vid-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.vid-content {
+  display: none;
+  z-index: 0;
+  h2 {
+    margin-top: 5px;;
+  }
+}
+
 
 .proficiencies-lag1,
 .proficiencies-lag2,

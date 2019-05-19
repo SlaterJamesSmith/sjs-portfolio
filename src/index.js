@@ -88,6 +88,25 @@ $( document ).ready(function() {
     }
     $('.body-trans').toggleClass('body-active');
 
+    if($('.toggle-phone-view').is(':visible')){
+       $('.vid-content').toggle();
+       $('.vid-content-lag1').toggle();
+       $('.vid-content-lag2').toggle();
+    }
+
+    if ($('.toggle-phone-view').is(':hidden')) {
+      if($('.vid-content').is(':visible')){
+         $('.vid-content').fadeOut(1000);
+         $('.vid-content-lag1').fadeOut(400);
+         $('.vid-content-lag2').fadeOut(150);
+      }
+      else{
+         $('.vid-content').fadeIn(2000);
+         setTimeout(function () { $('.vid-content-lag1').fadeIn(700); }, 800);
+         setTimeout(function () { $('.vid-content-lag2').fadeIn(700); }, 900);
+      }
+    }
+
     console.log("hello")
   });
 });
