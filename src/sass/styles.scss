@@ -525,6 +525,13 @@ iframe {
 .far-right-vids {
   padding-left: 40px;
   padding-right: 20px;
+  h2 {
+    margin-left: 0;
+  }
+  .clients {
+    font-weight: 300;
+    opacity: .5;
+  }
 }
 
 .vids-small {
@@ -542,6 +549,39 @@ iframe {
   margin-bottom: 20px;
   height: 16px;
 }
+
+.vid-buttons {
+  display: flex;
+  flex-direction: row;
+  max-width: 45.3vw;
+}
+
+.design-vid-left,
+.design-vid-right {
+  border: 3px solid white;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 5px;
+  margin-bottom: 15px;
+}
+
+.design-vid-left {
+  margin-right: 15px;
+}
+
+.design-vid-right {
+  margin-left: 15px;
+}
+
+
+.design-vid-right:hover,
+.design-vid-left:hover {
+  border: 3px solid orange;
+  color: orange;
+}
+
 
 // width="380" height="213.75" .56 ratio
 
@@ -580,6 +620,18 @@ iframe {
       max-width: 630px;
       font-weight: 400;
     }
+  }
+}
+
+.far-right-vids {
+  padding-left: 40px;
+  padding-right: 20px;
+  h2 {
+    margin-left: 0;
+  }
+  .clients {
+    font-weight: 300;
+    opacity: .5;
   }
 }
 
