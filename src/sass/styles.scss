@@ -283,7 +283,7 @@ h2 {
 
 .transform-active-vid {
   background-color: tomato;
-  height: 118vw;
+  height: 125vw;
   width: 98vw;
   border-bottom: 2px solid white;
 }
@@ -565,7 +565,8 @@ iframe {
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
-  margin-bottom: 15px;
+  margin-top: -5px;
+  margin-bottom: 25px;
 }
 
 .design-vid-left {
@@ -629,25 +630,27 @@ iframe {
       font-weight: 400;
     }
   }
-}
 
-.far-right-vids {
-  padding-left: 40px;
-  padding-right: 20px;
-  h2 {
-    margin-left: 0;
-  }
-  .clients {
-    font-weight: 300;
-    opacity: .5;
-  }
-}
 
-.vid-story {
-  h2 {
-    margin-left: 0;
-    border-bottom: 0;
+  .far-right-vids {
+    padding-left: 40px;
+    padding-right: 20px;
+    h2 {
+      margin-left: 0;
+    }
+    .clients {
+      font-weight: 300;
+      opacity: .5;
+    }
   }
+
+  .vid-story {
+    h2 {
+      margin-left: 0;
+      border-bottom: 0;
+    }
+  }
+
 }
 
 
@@ -777,6 +780,13 @@ iframe {
   li {
     font-size: 15px;
   }
+
+  .transform-active-vid {
+    background-color: tomato;
+    height: 160vw;
+    width: 98vw;
+    border-bottom: 2px solid white;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -874,6 +884,10 @@ iframe {
 
   .transform-active {
     height: 650px;
+  }
+
+  .vid-hide {
+    display: none;
   }
 
 }
@@ -1096,6 +1110,44 @@ iframe {
   .transform-active {
     width: 94vw;
     height: 900px;
+  }
+
+  .vid-grid-two {
+    grid-template-columns: 1fr;
+    grid-row: 1fr;
+    .vid-story {
+      grid-row: 1 / 2;
+    }
+    .far-right-vids {
+      grid-row: 2 / 3;
+    }
+  }
+
+  .vids-small {
+    width:40vw;
+    height: 23.8vw
+  }
+
+  .vids-large {
+    width:85vw;
+    height: 47.6vw
+  }
+
+  .transform-active-vid {
+    height: 325vw;
+  }
+
+  .far-right-vids {
+    padding: 0;
+  }
+
+  .vid-buttons {
+    max-width: none;
+  }
+
+  .design-vid-left,
+  .design-bio-right {
+    width: 40vw;
   }
 
 
@@ -1399,6 +1451,114 @@ iframe {
     justify-content: center;
     width: 100vw;
   }
+
+  .vid-grid-two {
+    grid-column: 1 / 3;
+  }
+
+  .prof-box-vidslarge {
+    margin-left: -10px;
+    margin-top: -20px;
+    width: 100vw;
+    height: 33px;
+    opacity: .3;
+  }
+
+  .transform-active-vid {
+    height: 370vw;
+  }
+
+  .vid-grid-two {
+    margin-left: 20px;
+  }
+
+  .vid-story,
+  .far-right-vids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .small-vid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .small-vid-title {
+    width: 95vw;
+    margin-bottom: 20px;
+  }
+
+  .prof-box-vids {
+    grid-column: 1 / 3;
+  }
+
+
+  .vid-story {
+    align-items: flex-start;
+    h1 {
+      font-size: 20px;
+    }
+    .vid-buttons {
+      flex-direction: column;
+      .design-vid-left,
+      .design-vid-right {
+        width: 87vw;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .vids-large {
+    width: 90vw;
+  }
+
+  .transform-active-vid {
+    height: 415vw;
+  }
+
+  .prof-box-vidslarge {
+    margin-left: -20px;
+  }
+
+
+    // .vid-grid-two {
+    //   grid-template-columns: 1fr;
+    //   grid-row: 1fr;
+    //   .vid-story {
+    //     grid-row: 1 / 2;
+    //   }
+    //   .far-right-vids {
+    //     grid-row: 2 / 3;
+    //   }
+    // }
+    //
+    // .vids-small {
+    //   width:40vw;
+    //   height: 23.8vw
+    // }
+    //
+    // .vids-large {
+    //   width:85vw;
+    //   height: 47.6vw
+    // }
+    //
+    // .transform-active-vid {
+    //   height: 325vw;
+    // }
+    //
+    // .far-right-vids {
+    //   padding: 0;
+    // }
+    //
+    // .vid-buttons {
+    //   max-width: none;
+    // }
+    //
+    // .design-vid-left,
+    // .design-bio-right {
+    //   width: 40vw;
+    // }
 }
 @media screen and (max-width: 500px) {
 
@@ -1482,6 +1642,10 @@ iframe {
     height: 300vw;
     border-bottom: 2px solid violet;
   }
+
+  .transform-active-vid {
+    height: 430vw;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -1529,6 +1693,11 @@ iframe {
       width: 44vw;
       height: 44vw;
     }
+  }
+
+  .transform-active-vid {
+    padding-left: 0;
+    height: 480vw;
   }
 
 }
