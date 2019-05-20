@@ -97,7 +97,7 @@ $( document ).ready(function() {
     if ($('.toggle-phone-view').is(':hidden')) {
       if($('.vid-content').is(':visible')){
          $('.vid-content').fadeOut(1000);
-         $('.vid-content-lag1').fadeOut(400);
+         $('.vid-content-lag1').fadeOut(150);
          $('.vid-content-lag2').fadeOut(150);
       }
       else{

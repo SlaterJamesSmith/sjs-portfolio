@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
 
 
 // * {
@@ -38,6 +39,17 @@ body {
 
 .body-trans {
   width: 555px;
+  -webkit-transition: width 1.5s;
+  -moz-transition: width 1.5s;
+  -o-transition: width 1.5s;
+  -ms-transition: width 1.5s;
+  transition: width 1.5s;
+  transition-timing-function: ease;
+}
+.menu-trans {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-transition: width 1.5s;
   -moz-transition: width 1.5s;
   -o-transition: width 1.5s;
@@ -137,7 +149,7 @@ h2 {
 
 .box-bio {
   display: absolute;
-  background-color: khaki;
+  background-color: #CCCC00;
   height: 34px;
   width: 8px;
   z-index: -1;
@@ -228,7 +240,7 @@ h2 {
 .development,
 .graphic,
 .video {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 .video {
@@ -474,9 +486,25 @@ a:hover {
 }
 
 .logo {
+  display: flex;
   h1 {
     margin-top: 0;
+    font-family: 'Raleway';
+    font-weight: 800;
+    margin-bottom: 0;
   }
+  p {
+    font-family: 'Century Gothic';
+  }
+}
+
+.contact-info {
+  display: none;
+  align-self: flex-end;
+  margin: 0;
+  opacity: .5;
+  padding-left: 10px;
+  padding-bottom: 38px;
 }
 
 
@@ -535,6 +563,11 @@ iframe {
     font-weight: 300;
     opacity: .5;
   }
+}
+
+.vid-content-lag1,
+.vid-content-lag2 {
+  display: none;
 }
 
 .vids-small {
