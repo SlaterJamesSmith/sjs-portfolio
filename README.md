@@ -39,6 +39,11 @@ This project is not yet finished. It still needs:
 - Live links
 - Deployment to custom URL address
 
+### Technologies Used
+- jQuery
+- SASS / SCSS
+
+For questions about this project, reach Slater Smith at smithslater@gmail.com
 
 *This software is licensed under the MIT license*
 Copyright (c) 2019 **_Slater Smith_**
