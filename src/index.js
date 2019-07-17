@@ -120,6 +120,17 @@ $(".bio").click(function() {
     $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
   }
   $('.body-trans').toggleClass('body-active');
+  
+  if ($('.toggle-phone-view').is(':hidden')) {
+    if($('.bio-text').is(':visible')){
+       $('.bio-text').fadeOut(1000);
+       $('.bio-images').fadeOut(1000);
+    }
+    else{
+       $('.bio-text').fadeIn(2000);
+       $('.bio-images').fadeIn(2000);
+    }
+  }
 
   console.log("hello")
 });
