@@ -255,6 +255,7 @@ h2 {
 
 .menubtn {
   z-index: 1;
+  cursor: pointer;
 }
 
 .transform-bio,
@@ -292,7 +293,7 @@ h2 {
 
 .transform-active-bio {
   background-color: gold;
-  height: 200px;
+  height: 450px;
   width: 98vw;
 }
 
@@ -471,8 +472,20 @@ a:hover {
   color: tomato;
 }
 
+.footer-tag {
+  font-family: 'Century Gothic';
+  // margin: 0;
+  align-self: center;
+  font-size: 15px;
+  color: grey;
+  margin-top: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .logo {
   display: flex;
+  flex-direction: column;
   h1 {
     margin-top: 0;
     font-family: 'Raleway';
@@ -481,6 +494,13 @@ a:hover {
   }
   p {
     font-family: 'Century Gothic';
+    margin: 0;
+    // align-self: center;
+    font-size: 15px;
+    color: lightgrey;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
   }
 }
 
@@ -615,14 +635,54 @@ iframe {
   }
 }
 
+.bio-bottom-content,
 .bio-images,
 .bio-text {
+  // margin-top: 30px;
   display: none;
+  h2 {
+    font-family: 'Raleway';
+    font-size: 40px;
+    margin-top: 0;
+    font-weight: bold;
+    line-height: 40px;
+    color: grey;
+    strong {
+      color: teal;
+    }
+  }
+  h3 {
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: 18px;
+    // margin-left: 200px;
+    color: grey;
+    margin-top: 15px;
+  }
+  .headshot {
+    width: 200px;
+    height: 200px;
+    border: solid 10px white;
+    border-radius: 5px;
+  }
 }
 
 .bio-content {
+  padding: 35px;
+}
+
+.bio-text {
+  max-width: 800px;
+}
+
+.bio-bottom-content,
+.bio-top-content {
   display: flex;
   flex-direction: row;
+}
+
+.bio-images{
+  margin-right: 20px;
 }
 
 
@@ -1704,7 +1764,7 @@ iframe {
   .box-prod {
     display: grid;
     grid-template-rows: 425px auto;
-    
+
     .position5,
     .position7,
     .position9,
