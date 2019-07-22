@@ -90,8 +90,6 @@ $( document ).ready(function() {
 
     if($('.toggle-phone-view').is(':visible')){
        $('.vid-content').toggle();
-       $('.vid-content-lag1').toggle();
-       $('.vid-content-lag2').toggle();
     }
 
     if ($('.toggle-phone-view').is(':hidden')) {
@@ -120,7 +118,7 @@ $(".bio").click(function() {
     $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
   }
   $('.body-trans').toggleClass('body-active');
-  
+
   if ($('.toggle-phone-view').is(':hidden')) {
     if($('.bio-text').is(':visible')){
        $('.bio-text').fadeOut(1000);
