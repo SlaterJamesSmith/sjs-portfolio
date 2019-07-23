@@ -518,8 +518,8 @@ a:hover {
   display: none;
   align-self: flex-end;
   margin: 0;
-  // opacity: .3;
-  color: lightgrey;
+  opacity: .5;
+  // color: lightgrey;
   padding-left: 10px;
   padding-bottom: 18px;
   font-size: 16px;
@@ -541,7 +541,7 @@ a:hover {
 
 .contact-info-red {
   transition: color 1.5s ease;
-  color: lightpink;
+  color: tomato;
 }
 
 .contact-info-yellow {
