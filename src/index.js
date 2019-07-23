@@ -132,7 +132,7 @@ $( document ).ready(function() {
   });
 
 
-  let clickBioDisabled = false;  
+  let clickBioDisabled = false;
   $(".bio").click(function() {
     if ($('.toggle-phone-view').is(':hidden')) {
     if (clickBioDisabled) {
@@ -155,12 +155,12 @@ $( document ).ready(function() {
 
     if ($('.toggle-phone-view').is(':hidden')) {
       if($('.bio-text').is(':visible')){
-        $('.bio-text').fadeOut(1000);
-        $('.bio-images').fadeOut(1000);
+        $('.bio-text').fadeOut(100);
+        $('.bio-images').fadeOut(300);
       }
       else{
-        $('.bio-text').fadeIn(2000);
-        $('.bio-images').fadeIn(2000);
+        setTimeout(function () { $('.bio-images').fadeIn(700); }, 800);
+        setTimeout(function () { $('.bio-text').fadeIn(700); }, 1000);
       }
     }
 
