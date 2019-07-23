@@ -130,33 +130,42 @@ $( document ).ready(function() {
     clickVidDisabled = true;
       setTimeout(function(){clickVidDisabled = false;}, 1500);
   });
-});
-
-$(".bio").click(function() {
 
 
-  $('.transform-bio').toggleClass('transform-active-bio');
-  $('.biog').toggleClass('bio-active');
-  if($('body').hasClass('body-active')){
-    $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
-  }
-  $('.body-trans').toggleClass('body-active');
-
-  if($('.toggle-phone-view').is(':visible')){
-    $('.bio-text').toggle();
-    $('.bio-images').toggle();
-  }
-
-  if ($('.toggle-phone-view').is(':hidden')) {
-    if($('.bio-text').is(':visible')){
-       $('.bio-text').fadeOut(1000);
-       $('.bio-images').fadeOut(1000);
+  let clickBioDisabled = false;  
+  $(".bio").click(function() {
+    if ($('.toggle-phone-view').is(':hidden')) {
+    if (clickBioDisabled) {
+        return;
+      }
     }
-    else{
-       $('.bio-text').fadeIn(2000);
-       $('.bio-images').fadeIn(2000);
-    }
-  }
 
-  console.log("hello")
+
+    $('.transform-bio').toggleClass('transform-active-bio');
+    $('.biog').toggleClass('bio-active');
+    if($('body').hasClass('body-active')){
+      $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
+    }
+    $('.body-trans').toggleClass('body-active');
+
+    if($('.toggle-phone-view').is(':visible')){
+      $('.bio-text').toggle();
+      $('.bio-images').toggle();
+    }
+
+    if ($('.toggle-phone-view').is(':hidden')) {
+      if($('.bio-text').is(':visible')){
+        $('.bio-text').fadeOut(1000);
+        $('.bio-images').fadeOut(1000);
+      }
+      else{
+        $('.bio-text').fadeIn(2000);
+        $('.bio-images').fadeIn(2000);
+      }
+    }
+
+    console.log("hello")
+    clickBioDisabled = true;
+      setTimeout(function(){clickBioDisabled = false;}, 1500);
+  });
 });
