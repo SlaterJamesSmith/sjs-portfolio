@@ -1402,11 +1402,12 @@ iframe {
       h3 {
         margin-left: 0;
         margin-right: 0;
+        padding-top: 10px;
         max-width: 85vw;
         // width: 95vw;
         min-width: 0;
-        font-size: 13px;
-        opacity: 1;
+        font-size: 15px;
+        opacity: .8;
       }
     }
     .dev-menu {
@@ -1463,7 +1464,7 @@ iframe {
 
   .transform-active {
     width: 100vw;
-    height: 1180px;
+    height: 1100px;
   }
 
   .biog,
@@ -1536,9 +1537,7 @@ iframe {
   }
 
   .logo {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+    align-items: center;
   }
 
   .vid-grid-two {
