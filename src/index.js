@@ -62,13 +62,27 @@ $( document ).ready(function() {
     }
     $('.body-trans').toggleClass('body-active');
 
-    if($('.graphics-content').is(':visible')){
-       $('.graphics-content').fadeOut(1000);
-       $('.graphics-content-img').fadeOut(150);
+    if ($('.toggle-phone-view').is(':visible')) {
+      if($('.graphics-content-img').is(':visible') && $('.graphics-content').is(':hidden')){
+        $('.graphics-content-img').hide();
+        $('.graphics-content-img').toggle();
+        $('.graphics-content').toggle();
+      } else {
+        $('.graphics-content-img').toggle();
+        $('.graphics-content').toggle();
+      }
     }
-    else{
-      $('.graphics-content').fadeIn(1500);
-      setTimeout(function () { $('.graphics-content-img').fadeIn(550); }, 950);
+
+
+    if ($('.toggle-phone-view').is(':hidden')) {
+      if($('.graphics-content').is(':visible')){
+         $('.graphics-content').fadeOut(1000);
+         $('.graphics-content-img').fadeOut(150);
+      }
+      else{
+        $('.graphics-content').fadeIn(1500);
+        setTimeout(function () { $('.graphics-content-img').fadeIn(550); }, 950);
+      }
     }
     clickProdDisabled = true;
       setTimeout(function(){clickProdDisabled = false;}, 1500);
