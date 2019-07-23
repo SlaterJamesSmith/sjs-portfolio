@@ -13,8 +13,6 @@ $( document ).ready(function() {
 
     $('.transform').toggleClass('transform-active');
     $('.dev').toggleClass('dev-active');
-    setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
-    $('.contact-info').removeClass( "contact-info-purple" ).removeClass( "contact-info-red" ).removeClass( "contact-info-yellow" ).addClass( "contact-info-blue" );
 
 
     if($('body').hasClass('body-active')){
@@ -30,6 +28,8 @@ $( document ).ready(function() {
     }
 
     if ($('.toggle-phone-view').is(':hidden')) {
+      setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
+      $('.contact-info').removeClass( "contact-info-purple" ).removeClass( "contact-info-red" ).removeClass( "contact-info-yellow" ).addClass( "contact-info-blue" );
       if($('.proficiencies').is(':visible')){
          $('.proficiencies').fadeOut(1000);
          $('.proficiencies-lag1').fadeOut(400);
@@ -62,8 +62,6 @@ $( document ).ready(function() {
 
     $('.transform-prod').toggleClass('transform-active-prod');
     $('.prod').toggleClass('prod-active');
-    setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
-    $('.contact-info').addClass( "contact-info-purple" ).removeClass( "contact-info-red" ).removeClass( "contact-info-yellow" ).removeClass( "contact-info-blue" );
 
     if($('body').hasClass('body-active')){
       $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
@@ -83,6 +81,8 @@ $( document ).ready(function() {
 
 
     if ($('.toggle-phone-view').is(':hidden')) {
+      setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
+      $('.contact-info').addClass( "contact-info-purple" ).removeClass( "contact-info-red" ).removeClass( "contact-info-yellow" ).removeClass( "contact-info-blue" );
       if($('.graphics-content').is(':visible')){
          $('.graphics-content').fadeOut(1000);
          $('.graphics-content-img').fadeOut(150);
@@ -111,8 +111,6 @@ $( document ).ready(function() {
 
     $('.transform-vid').toggleClass('transform-active-vid');
     $('.vid').toggleClass('vid-active');
-    setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
-    $('.contact-info').removeClass( "contact-info-purple" ).addClass( "contact-info-red" ).removeClass( "contact-info-yellow" ).removeClass( "contact-info-blue" );
 
     if($('body').hasClass('body-active')){
       $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
@@ -124,6 +122,8 @@ $( document ).ready(function() {
     }
 
     if ($('.toggle-phone-view').is(':hidden')) {
+      setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
+      $('.contact-info').removeClass( "contact-info-purple" ).addClass( "contact-info-red" ).removeClass( "contact-info-yellow" ).removeClass( "contact-info-blue" );
       if($('.vid-content').is(':visible')){
          $('.vid-content').fadeOut(1000);
          $('.vid-content-lag1').fadeOut(150);
@@ -154,8 +154,6 @@ $( document ).ready(function() {
 
     $('.transform-bio').toggleClass('transform-active-bio');
     $('.biog').toggleClass('bio-active');
-    setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
-    $('.contact-info').removeClass( "contact-info-purple" ).removeClass( "contact-info-red" ).addClass( "contact-info-yellow" ).removeClass( "contact-info-blue" );
 
     if($('body').hasClass('body-active')){
       $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
@@ -168,6 +166,8 @@ $( document ).ready(function() {
     }
 
     if ($('.toggle-phone-view').is(':hidden')) {
+      setTimeout(function () { $('.contact-info').fadeIn(700); }, 800);
+      $('.contact-info').removeClass( "contact-info-purple" ).removeClass( "contact-info-red" ).addClass( "contact-info-yellow" ).removeClass( "contact-info-blue" );
       if($('.bio-text').is(':visible')){
         $('.bio-text').fadeOut(100);
         $('.bio-images').fadeOut(300);

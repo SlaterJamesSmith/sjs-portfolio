@@ -26,6 +26,10 @@ body {
   padding-left: 10px;
 }
 
+.break {
+  display: none;
+}
+
 .toggle-phone-view {
   display: none;
 }
@@ -1030,6 +1034,10 @@ iframe {
 
 @media screen and (max-width: 715px) {
 
+  .contact-info {
+    font-size: 13px;
+  }
+
   .bio-text {
     h2 {
       font-size: 25px;
@@ -1300,9 +1308,33 @@ iframe {
 
 }
 
+@media screen and (max-width: 682px) {
+  .logo {
+    h1 {
+      font-size: 80px;
+    }
+  }
+  .break {
+    display: block;
+    height: 0;
+  }
+}
+
 @media screen and (max-width: 576px) {
   * {
     min-width: 0;
+  }
+
+  .body-trans {
+    width: 100%;
+  }
+
+  .contact-info-red,
+  .contact-info-blue,
+  .contact-info-yellow,
+  .contact-info-purple,
+  .contact-info {
+    display: none;
   }
 
   html {
