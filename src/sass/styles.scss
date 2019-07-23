@@ -881,6 +881,17 @@ iframe {
   }
 }
 
+@media screen and (max-width: 835px) {
+
+.bio-text {
+  h2 {
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+
+}
+
 @media screen and (max-width: 800px) {
   .box {
     display: grid;
@@ -986,6 +997,12 @@ iframe {
 
 @media screen and (max-width: 715px) {
 
+  .bio-text {
+    h2 {
+      font-size: 25px;
+      line-height: normal;
+    }
+  }
 
   .box {
     display: grid;
