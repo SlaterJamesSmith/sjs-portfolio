@@ -9,7 +9,7 @@ $( document ).ready(function() {
           return;
         }
     }
-    
+
     $('.transform').toggleClass('transform-active');
     $('.dev').toggleClass('dev-active');
 
@@ -141,6 +141,11 @@ $(".bio").click(function() {
     $( 'body' ).removeClass( "body-trans" ).addClass( "body-active" );
   }
   $('.body-trans').toggleClass('body-active');
+
+  if($('.toggle-phone-view').is(':visible')){
+    $('.bio-text').toggle();
+    $('.bio-images').toggle();
+  }
 
   if ($('.toggle-phone-view').is(':hidden')) {
     if($('.bio-text').is(':visible')){

@@ -1610,6 +1610,30 @@ iframe {
     margin-left: -20px;
   }
 
+  .bio-content {
+    padding-top: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bio-top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-images {
+    min-width: 220px;
+  }
+
+  .bio-text {
+    margin-left: 10px;
+    margin-top: 15px;
+    h2 {
+      font-size: 23px;
+      line-height: normal;
+    }
+  }
+
 
 
 }
@@ -1775,6 +1799,15 @@ iframe {
       // max-height: 120px;
       width: 44vw;
       height: 44vw;
+    }
+  }
+
+  .bio-text {
+    margin-left: 10px;
+    margin-top: 15px;
+    h2 {
+      font-size: 21px;
+      line-height: normal;
     }
   }
 
