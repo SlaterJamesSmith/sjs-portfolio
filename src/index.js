@@ -4,9 +4,12 @@ $( document ).ready(function() {
 
   let clickDevDisabled = false;
   $(".dev").click(function() {
-    if (clickDevDisabled) {
-        return;
-      }
+    if ($('.toggle-phone-view').is(':hidden')) {
+      if (clickDevDisabled) {
+          return;
+        }
+    }
+    
     $('.transform').toggleClass('transform-active');
     $('.dev').toggleClass('dev-active');
 
@@ -47,12 +50,11 @@ $( document ).ready(function() {
 
   let clickProdDisabled = false;
   $(".prod").click(function() {
-    if (clickProdDisabled) {
-        return;
-      }
-
-
-
+    if ($('.toggle-phone-view').is(':hidden')) {
+      if (clickProdDisabled) {
+          return;
+        }
+    }
 
     $('.transform-prod').toggleClass('transform-active-prod');
     $('.prod').toggleClass('prod-active');
@@ -91,8 +93,13 @@ $( document ).ready(function() {
 
 
 
-
+  let clickVidDisabled = false;
   $(".vid").click(function() {
+    if ($('.toggle-phone-view').is(':hidden')) {
+    if (clickVidDisabled) {
+        return;
+      }
+    }
 
 
     $('.transform-vid').toggleClass('transform-active-vid');
@@ -120,6 +127,8 @@ $( document ).ready(function() {
     }
 
     console.log("hello")
+    clickVidDisabled = true;
+      setTimeout(function(){clickVidDisabled = false;}, 1500);
   });
 });
 
