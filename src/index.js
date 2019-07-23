@@ -174,51 +174,50 @@ $( document ).ready(function() {
 // sub menu buttons
 
 // web deb sub button
-let subDevDisabled = false;
-$(".dev-sub-btn").click(function() {
-  if (subDevDisabled) {
-      return;
+  let subDevDisabled = false;
+  $(".dev-sub-btn").click(function() {
+    if (subDevDisabled) {
+        return;
+      }
+
+    if($('.proficiencies').is(':hidden')){
+      $('.transform').toggleClass('transform-active');
+      $('.dev').toggleClass('dev-active');
+      $('.proficiencies').fadeIn(2000);
+      setTimeout(function () { $('.proficiencies-lag1').fadeIn(700); }, 800);
+      setTimeout(function () { $('.proficiencies-lag2').fadeIn(700); }, 900);
+    }
+    if($('.graphics-content').is(':visible')){
+      $('.transform-prod').removeClass('transform-active-prod');
+      $('.prod').removeClass('prod-active');
+       $('.graphics-content').fadeOut(1000);
+       $('.graphics-content-img').fadeOut(150);
+    }
+    if($('.vid-content').is(':visible')){
+      $('.transform-vid').removeClass('transform-active-vid');
+      $('.vid').removeClass('vid-active');
+       $('.vid-content').fadeOut(1000);
+       $('.vid-content-lag1').fadeOut(150);
+       $('.vid-content-lag2').fadeOut(150);
+    }
+    if($('.bio-text').is(':visible')){
+      $('.transform-bio').removeClass('transform-active-bio');
+      $('.biog').removeClass('bio-active');
+      $('.bio-text').fadeOut(100);
+      $('.bio-images').fadeOut(300);
     }
 
-  if($('.proficiencies').is(':hidden')){
-    $('.transform').toggleClass('transform-active');
-    $('.dev').toggleClass('dev-active');
-    $('.proficiencies').fadeIn(2000);
-    setTimeout(function () { $('.proficiencies-lag1').fadeIn(700); }, 800);
-    setTimeout(function () { $('.proficiencies-lag2').fadeIn(700); }, 900);
-  }
-
-  if($('.graphics-content').is(':visible')){
-    $('.transform-prod').removeClass('transform-active-prod');
-    $('.prod').removeClass('prod-active');
-     $('.graphics-content').fadeOut(1000);
-     $('.graphics-content-img').fadeOut(150);
-  }
-  if($('.vid-content').is(':visible')){
-    $('.transform-vid').removeClass('transform-active-vid');
-    $('.vid').removeClass('vid-active');
-     $('.vid-content').fadeOut(1000);
-     $('.vid-content-lag1').fadeOut(150);
-     $('.vid-content-lag2').fadeOut(150);
-  }
-  if($('.bio-text').is(':visible')){
-    $('.transform-bio').removeClass('transform-active-bio');
-    $('.biog').removeClass('bio-active');
-    $('.bio-text').fadeOut(100);
-    $('.bio-images').fadeOut(300);
-  }
-
-  clickBioDisabled = true;
-  clickDevDisabled = true;
-  clickProdDisabled = true;
-  subCommsDisabled = true;
-  subDevDisabled = true;
-  setTimeout(function(){clickProdDisabled = false;}, 1500);
-  setTimeout(function(){clickBioDisabled = false;}, 1500);
-  setTimeout(function(){clickDevDisabled = false;}, 1500);
-  setTimeout(function(){subCommsDisabled = false;}, 1500);
-  setTimeout(function(){subDevDisabled = false;}, 1500);
-});
+    clickBioDisabled = true;
+    clickDevDisabled = true;
+    clickProdDisabled = true;
+    subCommsDisabled = true;
+    subDevDisabled = true;
+    setTimeout(function(){clickProdDisabled = false;}, 1500);
+    setTimeout(function(){clickBioDisabled = false;}, 1500);
+    setTimeout(function(){clickDevDisabled = false;}, 1500);
+    setTimeout(function(){subCommsDisabled = false;}, 1500);
+    setTimeout(function(){subDevDisabled = false;}, 1500);
+  });
 
 // comms + design button
   let subCommsDisabled = false;
