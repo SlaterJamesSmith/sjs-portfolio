@@ -30,6 +30,11 @@ body {
   display: none;
 }
 
+.dev-sub-btn,
+.comms-btn {
+  cursor: pointer;
+}
+
 .body-trans {
   width: 555px;
   -webkit-transition: width 1.5s;
