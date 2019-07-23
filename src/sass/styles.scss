@@ -518,9 +518,35 @@ a:hover {
   display: none;
   align-self: flex-end;
   margin: 0;
-  opacity: .5;
+  // opacity: .3;
+  color: lightgrey;
   padding-left: 10px;
-  padding-bottom: 38px;
+  padding-bottom: 18px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: 'Century Gothic';
+  // transition: color 1.5s ease;
+  transition: color 1.5s ease;
+}
+
+.contact-info-blue {
+  transition: color 1.5s ease;
+  color: #45CEE0;
+}
+
+.contact-info-purple {
+  transition: color 1.5s ease;
+  color: violet;
+}
+
+.contact-info-red {
+  transition: color 1.5s ease;
+  color: lightpink;
+}
+
+.contact-info-yellow {
+  transition: color 1.5s ease;
+  color: gold;
 }
 
 
