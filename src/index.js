@@ -52,9 +52,9 @@ $( document ).ready(function() {
   let clickProdDisabled = false;
   $(".prod").click(function() {
     if ($('.toggle-phone-view').is(':hidden')) {
-      if (clickProdDisabled) {
+      if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
           return;
-        }
+      }
     }
 
     $('.transform-prod').toggleClass('transform-active-prod');
@@ -97,8 +97,8 @@ $( document ).ready(function() {
   let clickVidDisabled = false;
   $(".vid").click(function() {
     if ($('.toggle-phone-view').is(':hidden')) {
-    if (clickVidDisabled) {
-        return;
+      if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
+          return;
       }
     }
 
@@ -137,8 +137,8 @@ $( document ).ready(function() {
   let clickBioDisabled = false;
   $(".bio").click(function() {
     if ($('.toggle-phone-view').is(':hidden')) {
-    if (clickBioDisabled) {
-        return;
+      if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
+          return;
       }
     }
 
@@ -176,9 +176,9 @@ $( document ).ready(function() {
 // web deb sub button
   let subDevDisabled = false;
   $(".dev-sub-btn").click(function() {
-    if (subDevDisabled) {
+    if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
         return;
-      }
+    }
 
     if($('.proficiencies').is(':hidden')){
       $('.transform').toggleClass('transform-active');
@@ -222,9 +222,9 @@ $( document ).ready(function() {
 // comms + design button
   let subCommsDisabled = false;
   $(".comms-btn").click(function() {
-    if (subCommsDisabled) {
+    if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
         return;
-      }
+    }
 
     if($('.graphics-content-img').is(':hidden')){
       $('.transform-prod').toggleClass('transform-active-prod');
@@ -268,9 +268,9 @@ $( document ).ready(function() {
 // production sub menu button
   let subBioDisabled = false;
   $(".vid-sub-btn").click(function() {
-    if (subBioDisabled) {
+    if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
         return;
-      }
+    }
 
     if($('.vid-content').is(':hidden')){
       $('.transform-vid').toggleClass('transform-active-vid');
