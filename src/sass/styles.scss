@@ -1334,7 +1334,7 @@ iframe {
   .contact-info-yellow,
   .contact-info-purple,
   .contact-info {
-    display: none;
+    display: none !important;
   }
 
   html {
