@@ -103,7 +103,7 @@ $( document ).ready(function() {
   let clickVidDisabled = false;
   $(".vid").click(function() {
     if ($('.toggle-phone-view').is(':hidden')) {
-      if (subBioDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
+      if (clickVidDisabled || clickBioDisabled || clickDevDisabled || clickProdDisabled || subCommsDisabled || subDevDisabled || subVidDisabled || subBioDisabled) {
           return;
       }
     }

@@ -177,6 +177,9 @@ h2 {
   .graphics-links-container {
     max-width: 700px;
   }
+  h4 {
+    min-width: 348px;
+  }
 }
 
 .graphics-column-three {
@@ -638,10 +641,15 @@ iframe {
   display: flex;
   flex-direction: row;
   max-width: 45.3vw;
+  a {
+    opacity: 1;
+    text-decoration: none;
+  }
 }
 
 .design-vid-left,
 .design-vid-right {
+  cursor: pointer;
   border: 3px solid white;
   color: white;
   text-align: center;
@@ -861,7 +869,6 @@ iframe {
 
       }
       h4 {
-
         margin-left: 0;
       }
     }
