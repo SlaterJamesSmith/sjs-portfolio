@@ -647,6 +647,13 @@ iframe {
   }
 }
 
+.graphics-links-container {
+  a {
+    opacity: 1;
+    text-decoration: none;
+  }
+}
+
 .design-vid-left,
 .design-vid-right {
   cursor: pointer;
