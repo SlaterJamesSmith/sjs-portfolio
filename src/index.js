@@ -1,6 +1,10 @@
 import './sass/styles.scss';
 
+document.documentElement.className = 'no-fouc';
+
 $( document ).ready(function() {
+
+  $("body").show();
 
 // web development animations
   let clickDevDisabled = false;

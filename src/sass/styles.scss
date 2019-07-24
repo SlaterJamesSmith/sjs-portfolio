@@ -1,22 +1,15 @@
-@import "animate.scss";
+// @import "animate.scss";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
 @import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
 
 
-// * {
-//   border: 1px solid red;
-// }
 
-.no-flick{-webkit-transform:translate3d(0,0,0);}
 
 $font-stack: 'Raleway', sans-serif;
 $primary-font-color: #535353;
 
-// * {
-//   border: 1px solid forestgreen;
-// }
 
 body {
   display: grid;
@@ -25,6 +18,7 @@ body {
   margin-right: auto;
   padding-left: 10px;
 }
+
 
 .break {
   display: none;
