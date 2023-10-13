@@ -5,7 +5,7 @@
 
 ### Description
 
-In-progress custom portfolio page built in order to practice using CSS animations utilizing responsive design. This web page is meant to communicate my personal web development proficiencies, as well as share my past graphic design, strategic communications, and video production projects. To view live deployment, visit https://www.slaterjs.dev/
+In-progress custom portfolio page built in order to practice using CSS animations utilizing responsive design. This web page is meant to communicate my personal web development proficiencies, as well as share my past graphic design, strategic communications, and video production projects.
 
 ### Gif Example
 View gif example video clip below. Note that transitions on local machine are **smoother than captured in the following video.** This is due to gif file format limitations.
